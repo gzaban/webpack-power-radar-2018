@@ -2,6 +2,9 @@ const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
+const PACKAGE  = require('./package.json');
+
+//onsole.log(PACKAGE);
 
 const extractSass = new ExtractTextPlugin({
     filename: "[name].[contenthash].css",
@@ -26,7 +29,7 @@ const config = {
     ],
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: '[name].[contenthash].js',
+        filename: '[name].'+ PACKAGE.version +'.js',
         publicPath: '/'
     },
     devtool: "inline-source-map",

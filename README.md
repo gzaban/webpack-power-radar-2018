@@ -1,3 +1,5 @@
-# Webpack with Blackjack and hookers
+# webpack boilerplate
 
-my setup for webpack for react with hmr and more
+My setup for webpack for react with hmr and more
+
+
