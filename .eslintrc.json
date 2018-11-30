@@ -33,7 +33,10 @@
 		//"plugin:css-modules/recommended"
 	],
 	"settings": {
-		"import/ignore": [".scss$"]
+		"import/ignore": [".scss$"],
+		"react": {
+			"version": "16.3.2"
+		}
 	},
 	"rules": {
 		/*"indent": [

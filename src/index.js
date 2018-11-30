@@ -1,5 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import './css/main.scss';
+import App from './containers/App/App';
 
-const test = 'im a test';
-
-console.log(test);
+ReactDOM.render(<App />, document.getElementById('root'));
