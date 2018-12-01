@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development&& webpack-dev-server --open",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js --open",
     "clean": "rimraf ./build",
     "build": "npm run clean && cross-env NODE_ENV=production webpack",
     "storybook": "start-storybook -p 6006",
@@ -126,6 +126,7 @@
     "postcss-preset-env": "6.0.6",
     "postcss-safe-parser": "4.0.1",
     "prettier": "^1.15.3",
+    "react-hot-loader": "^4.3.12",
     "resolve": "1.8.1",
     "rimraf": "^2.6.2",
     "sass-loader": "7.1.0",
