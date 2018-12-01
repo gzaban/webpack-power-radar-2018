@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 import logo from './logo.svg';
 import './App.scss';
+import Loadable from 'react-loadable';
+import Loading from '../../components/Loading/Loading';
+
+const TestSplitCode = Loadable({
+	loader: () => import(/* webpackChunkName: "test-split-code" */ '../../components/TestSplitCode/TestSplitCode'),
+	loading: Loading
+});
 
 class App extends Component {
 	render() {
@@ -16,6 +23,7 @@ class App extends Component {
 						Learn React
 					</a>
 				</header>
+				<TestSplitCode />
 			</div>
 		);
 	}
